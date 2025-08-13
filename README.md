@@ -19,7 +19,7 @@ A Simple Android Notes App with **Firebase integration** for login, signup, and 
 
 ### 🔑 Authentication (Light & Dark Mode)
 <p align="center">
-  <img src="ss/3.jpg" width="200" />
+  <img src="ss/5.jpg" width="200" />
   <img src="ss/4.jpg" width="200" />
   <img src="ss/6.jpg" width="200" />
 </p>
