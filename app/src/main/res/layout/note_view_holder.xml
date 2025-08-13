@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/tick"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:elevation="1dp"
+        android:src="@drawable/check"
+        android:padding="2dp"
+        android:visibility="gone"
+        android:background="@drawable/check_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="3dp"
+        app:tint="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/note_view_back"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/noteTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/sora_semibold"
+            android:paddingHorizontal="20dp"
+            android:singleLine="true"
+            android:text="Notes Title"
+            android:textColor="@color/title_color"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/noteDes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/sora"
+            android:paddingHorizontal="20dp"
+            android:text="qwiudnqaif qiawdnjqiawd qwiduni aqiwnia aicnaniainc awinuaidwn awdnaiwudnaiwnd"
+            android:textColor="@color/des_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/noteTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/sora"
+            android:gravity="end"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="4dp"
+            android:text="15 July 24 6:49 pm"
+            android:textColor="@color/time_color"
+            android:textSize="10sp" />
+    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>

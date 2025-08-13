@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/sora_semibold"
+        android:paddingHorizontal="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="20dp"
+        android:text="Take Notes"
+        android:textColor="@color/black"
+        android:textSize="38sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/search_bar_back"
+        android:drawableLeft="@drawable/search_icon"
+        android:drawablePadding="5dp"
+        android:drawableTint="@color/search_color"
+        android:fontFamily="@font/sora"
+        android:singleLine="true"
+        android:hint="Search"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHighlight="#61373737"
+        android:textColorHint="@color/search_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/rc"
+        app:layout_constraintStart_toStartOf="@+id/rc"
+        app:layout_constraintTop_toTopOf="@+id/rc" />
+
+    <TextView
+        android:id="@+id/addText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="nothing"
+        android:textColor="@color/gray"
+        android:textSize="12sp"
+        android:fontFamily="@font/sora_light"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rc" />
+
+    <ImageView
+        android:id="@+id/addNote"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/add_button_back"
+        android:padding="10dp"
+        android:clickable="true"
+        android:src="@drawable/add_icon"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

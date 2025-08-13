@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#686868</color>
+    <color name="grey">#D8D8D8</color>
+
+    <color name="title_color">#FF000000</color>
+    <color name="des_color">#2B2B2B</color>
+    <color name="time_color">#686868</color>
+
+    <color name="back">#FFFFFFFF</color>
+
+    <color name="noteholder_border">#D8D8D8</color>
+    <color name="noteholder_color">#FFFFFFFF</color>
+    <color name="noteholder_select">#D8D8D8</color>
+
+    <color name="search_back">#D8D8D8</color>
+    <color name="search_color">#686868</color>
+</resources>

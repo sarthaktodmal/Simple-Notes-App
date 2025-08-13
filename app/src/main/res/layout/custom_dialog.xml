@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="30dp"
+    android:paddingVertical="20dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/sora_semibold"
+        android:text="Confirm Delete"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/sora"
+        android:layout_marginTop="15dp"
+        android:text="Are you sure you want to delete this note?"
+        android:textColor="@color/des_color"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:id="@+id/cancelBut"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textSize="18sp"
+            android:background="@drawable/signup_button_back"
+            android:fontFamily="@font/sora"
+            android:textColor="@color/black"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/deleteBut"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:text="Delete"
+            android:textSize="18sp"
+            android:background="@drawable/login_button_back"
+            android:fontFamily="@font/sora"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
