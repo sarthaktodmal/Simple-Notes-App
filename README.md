@@ -36,8 +36,9 @@ A Simple Android Notes App with **Firebase integration** for login, signup, and 
   <img src="ss/10.jpg" width="200" />
 </p>
 
-### 🗑️ Delete & Selection
+### 🗑️ Search & Delete
 <p align="center">
+  <img src="ss/11.jpg" width="200" />
   <img src="ss/9.jpg" width="200" />
 </p>
 
